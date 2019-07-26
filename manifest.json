@@ -1,0 +1,15 @@
+{
+  "name": "Music-Kentei-Full",
+  "manifest_version": 2,
+  "version": "0.1",
+  "description": "Appear full-library Kentei button",
+  "permissions": [
+    "http://music-kentei.net/kentei.html/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://music-kentei.net/kentei.html/*"],
+      "js": ["nano.min.js","content_script.js"]
+    }
+  ]
+}
